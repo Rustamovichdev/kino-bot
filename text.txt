@@ -1,0 +1,75 @@
+
+
+sql => pool:  prisme 
+
+Admin => CRUD  role  table admin(table) => id, admin_id, username, firstname  ,role
+Channel => CRUD channel(table) => id, username,channel_id,link,status,isActive
+majburiy azolik => table(majburiy azolik) => id active
+film => table (id,film_title,code(number),create_at.... ) CRUD
+
+CREATE TABLE film(
+    id
+    film_id
+    code
+    create_at
+)
+serial => table (id,film_title,video_id,code)   => CRUD
+
+CREATE TABLE serial(
+    id
+    film_id
+    code
+    type:[]
+    create_at
+)
+CREATE TABLE serial_type(
+    id
+    num
+    serial_id
+)
+
+user
+video uzatish xolati 
+
+CREATE TABLE FORWORDTABLE{
+  active
+}
+
+
+block user list
+CREATE TABLE blockUserList{
+    id:
+    username:
+    firstname;
+    user_id:
+}
+
+
+Xabar uchun
+
+ Xabar yuborilmoqda.
+⏰ Boshlash: 15:16 
+📝 Rejalashtirish: 15:20 
+📨 Yuborildi: 500 ta
+✅ Qabul qilindi: 154 ta 
+💌 Xabar turi: CopyMessage 
+💡 Status: active
+
+
+
+statistika
+📊 Bot statistikasi:
+
+👥 Barcha userlar: 6142 ta
+🎥 Barcha kinolar: 252 ta
+
+⏰ Uptime: 1 yil, 1 oy, 14 kun, 16 soat, 33 daqiqa, 20 sekund
+
+
+
+
+
+
+
+
+
