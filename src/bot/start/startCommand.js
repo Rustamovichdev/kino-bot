@@ -1,4 +1,4 @@
-const pool = require("../db");
+const pool = require("../../db");
 const { Markup } = require("telegraf");
 
 async function startCommand(ctx) {
@@ -16,7 +16,7 @@ async function startCommand(ctx) {
                 channels[i].channel_id,
                 chatId,
             );
-            const status = ["creator", "member", "administration"];
+            const status = ["creator", "member", "administrator"];
 
             if (!status.includes(member.status)) {
                 isCheck = false;
@@ -26,9 +26,10 @@ async function startCommand(ctx) {
         }
 
         if (isCheck) {
+            ctx.deleteMessage();
             ctx.reply("Kino kodini yuboring");
         } else {
-            let buttons = f.map((item, index) => [
+            let buttons = channels.map((item, index) => [
                 Markup.button.url(`Kanal-${index + 1}`, item.channel_link),
             ]);
 
